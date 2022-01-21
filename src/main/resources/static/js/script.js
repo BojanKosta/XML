@@ -1,9 +1,11 @@
 const btnAdd = document.querySelector('.btn-add');
 const btnAddUser = document.querySelector('.btn-add-user');
 const form = document.querySelector('.form');
+const messages = document.querySelector('.messages');
+const message = document.querySelector('.message');
+
 
 getData();
-
 
 document.addEventListener('mouseup', function(e) {
   if (!form.contains(e.target)) {
@@ -12,7 +14,6 @@ document.addEventListener('mouseup', function(e) {
 });
 
 btnAdd.addEventListener('click', () => {
-  //console.log('adfsdfsd')
   form.style.display = 'block';
 });
 
@@ -36,7 +37,26 @@ btnAddUser.addEventListener('click', async () => {
   }).then(res => res.json())
 
   console.log(response);
+  if(response.message === 'fail'){
+    messages.className  = 'error';
+    message.textContent = "User with email " + response.email + " already exist.";
+
+    setTimeout(() => {
+      message.textContent = '';
+      messages.className  = 'messages';
+    }, 3000);
+
+  }else {
+    messages.className  = 'succes';
+    message.textContent = "User with email " + response.email + " added.";
+
+    setTimeout(() => {
+      message.textContent = '';
+      messages.className  = 'messages';
+    }, 3000);
+
     getData();
+  }
 
 });
 

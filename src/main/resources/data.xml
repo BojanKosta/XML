@@ -19,12 +19,20 @@
                <password>123654</password>
            </user>
            <user>
-               <first_name>null</first_name>
-               <last_name>null</last_name>
-               <address>http://localhost:8080/</address>
-               <city>http://localhost:8080/</city>
-               <email>http://localhost:8080/</email>
-               <password>http://localhost:8080/</password>
+               <first_name>goca@gmail.com</first_name>
+               <last_name>goca@gmail.com</last_name>
+               <address>gocaaaa@gmail.com</address>
+               <city>goca@gmail.com</city>
+               <email>gocaaaa@gmail.com</email>
+               <password>goca@gmail.com</password>
+           </user>
+           <user>
+               <first_name>goca@gmail.com</first_name>
+               <last_name>goca@gmail.com</last_name>
+               <address>goca@gmail.com</address>
+               <city>goca@gmail.com</city>
+               <email>gocaaaaa@gmail.com</email>
+               <password>goca@gmail.com</password>
            </user>
        </country>
        <country name="Germany">
@@ -35,14 +43,6 @@
                <city>Hamburg</city>
                <email>mmustermann@yahoo.com</email>
                <password>kdkei44229</password>
-           </user>
-           <user>
-               <first_name>null</first_name>
-               <last_name>null</last_name>
-               <address>Boka</address>
-               <city>Boka</city>
-               <email>Boka</email>
-               <password>Boka</password>
            </user>
        </country>
    </continent>
@@ -56,14 +56,6 @@
                <email>julia.johnson@gmail.com</email>
                <password>49dksSSe3</password>
            </user>
-           <user>
-               <first_name>null</first_name>
-               <last_name>null</last_name>
-               <address>Kingdom</address>
-               <city>Kingdom</city>
-               <email>Kingdomasfasf</email>
-               <password>Kingdom</password>
-           </user>
        </country>
    </continent>
     <continent name="Asia">
@@ -76,31 +68,15 @@
                <email>bojankosta@yahoo.com</email>
                <password>123654</password>
            </user>
-           <user>
-               <first_name>null</first_name>
-               <last_name>null</last_name>
-               <address>Kingdom</address>
-               <city>Kingdom</city>
-               <email>Kingdom</email>
-               <password>Kingdom</password>
-           </user>
        </country>
        <country name="China">
            <user>
-               <first_name>Boka</first_name>
-               <last_name>Unlimited</last_name>
-               <address>userList</address>
-               <city>userList</city>
-               <email>userListasdf</email>
-               <password>userListuserList</password>
-           </user>
-           <user>
-               <first_name>Boka</first_name>
-               <last_name>Unlimited</last_name>
-               <address>userList</address>
-               <city>userList</city>
-               <email>asdgfasdrg rgtaser</email>
-               <password>userListuserList</password>
+               <first_name>Goran</first_name>
+               <last_name>Gligic</last_name>
+               <address>Nozicko bb</address>
+               <city>Nozicko</city>
+               <email>goca@gmail.com</email>
+               <password>123456</password>
            </user>
        </country>
    </continent>
