@@ -1,0 +1,74 @@
+.btn-add {
+    border: none;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 5px 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.form {
+    display: none;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+    top: 30%;
+    z-index: 99;
+    background-color: rgb(228, 238, 238);
+}
+
+.form-container {
+    height: 30%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.input-form {
+    text-align: center;
+    margin: 10px;
+}
+
+#country {
+    width: 177px;
+    height: 21px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+.table {
+    background-color: antiquewhite;
+}
+
+.continent {
+    text-align: center;
+    background-color: darkgray;
+}
+
+.user {
+    margin-left: 40px;
+}
+
+p {
+    display: inline-block;
+}
+
+.btn-delete {
+    padding: 2px;
+    text-align: center;
+    background-color: brown;
+    color: aliceblue;
+    border: none;
+    display: inline-block;
+}
+
+.user-content, .user-function {
+    display: inline-block;
+}
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data>
+    <continent name="Europe">
+       <country name="United Kingdom">
+           <user>
+               <first_name>Michael</first_name>
+               <last_name>Smith</last_name>
+               <address>322 Regent Street</address>
+               <city>London</city>
+               <email>michael.smith@hotmail.com</email>
+               <password>gk3288skW</password>
+           </user>
+           <user>
+               <first_name>Bojan</first_name>
+               <last_name>Todorovovic</last_name>
+               <address>Luke Radojcica</address>
+               <city>Petrovo</city>
+               <email>bojan@yahoo.com</email>
+               <password>123654</password>
+           </user>
+           <user>
+               <first_name>null</first_name>
+               <last_name>null</last_name>
+               <address>http://localhost:8080/</address>
+               <city>http://localhost:8080/</city>
+               <email>http://localhost:8080/</email>
+               <password>http://localhost:8080/</password>
+           </user>
+       </country>
+       <country name="Germany">
+           <user>
+               <first_name>Max</first_name>
+               <last_name>Mustermann</last_name>
+               <address>Berlinerstrasse 7</address>
+               <city>Hamburg</city>
+               <email>mmustermann@yahoo.com</email>
+               <password>kdkei44229</password>
+           </user>
+           <user>
+               <first_name>null</first_name>
+               <last_name>null</last_name>
+               <address>Boka</address>
+               <city>Boka</city>
+               <email>Boka</email>
+               <password>Boka</password>
+           </user>
+       </country>
+   </continent>
+    <continent name="North America">
+       <country name="United States">
+           <user>
+               <first_name>Julia</first_name>
+               <last_name>Johnson</last_name>
+               <address>300 Boylston Ave E</address>
+               <city>Seattle</city>
+               <email>julia.johnson@gmail.com</email>
+               <password>49dksSSe3</password>
+           </user>
+           <user>
+               <first_name>null</first_name>
+               <last_name>null</last_name>
+               <address>Kingdom</address>
+               <city>Kingdom</city>
+               <email>Kingdomasfasf</email>
+               <password>Kingdom</password>
+           </user>
+       </country>
+   </continent>
+    <continent name="Asia">
+       <country name="Japan">
+           <user>
+               <first_name>Bojan</first_name>
+               <last_name>Todorovovic</last_name>
+               <address>Luke Radojcica</address>
+               <city>Petrovo</city>
+               <email>bojankosta@yahoo.com</email>
+               <password>123654</password>
+           </user>
+           <user>
+               <first_name>null</first_name>
+               <last_name>null</last_name>
+               <address>Kingdom</address>
+               <city>Kingdom</city>
+               <email>Kingdom</email>
+               <password>Kingdom</password>
+           </user>
+       </country>
+       <country name="China">
+           <user>
+               <first_name>Boka</first_name>
+               <last_name>Unlimited</last_name>
+               <address>userList</address>
+               <city>userList</city>
+               <email>userListasdf</email>
+               <password>userListuserList</password>
+           </user>
+           <user>
+               <first_name>Boka</first_name>
+               <last_name>Unlimited</last_name>
+               <address>userList</address>
+               <city>userList</city>
+               <email>asdgfasdrg rgtaser</email>
+               <password>userListuserList</password>
+           </user>
+       </country>
+   </continent>
+</data>
