@@ -4,7 +4,6 @@ const form = document.querySelector('.form');
 const messages = document.querySelector('.messages');
 const message = document.querySelector('.message');
 
-
 getData();
 
 document.addEventListener('mouseup', function(e) {
@@ -47,7 +46,7 @@ btnAddUser.addEventListener('click', async () => {
     }, 3000);
 
   }else {
-    messages.className  = 'succes';
+    messages.className  = 'success';
     message.textContent = "User with email " + response.email + " added.";
 
     setTimeout(() => {
@@ -71,8 +70,6 @@ async function getData() {
         }).then(res => res.json())
         
        createTable(response);
-
-  
   }
   
 function createTable(data){
@@ -116,7 +113,6 @@ function createTable(data){
  table.innerHTML = html;
 }
 
-
 function deleteUser(email){
 
   fetch('http://localhost:8080/delete/?email='+email, {
@@ -137,5 +133,4 @@ function objToString(obj){
   for(const [ key, value ] of Object.entries(obj)){
     str += key + ' : ' + value + '\n';
   }
-  console.log(str);
-} 
+}

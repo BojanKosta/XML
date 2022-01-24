@@ -41,7 +41,6 @@ public class ContinentService {
 
           // print all
           result = handler.getContinentList();
-          //result.forEach(System.out::println);
 
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
@@ -53,7 +52,6 @@ public class ContinentService {
         List<Continent> listData = getAllData();
         String email = newUser.getEmail();
         UserResponse userResponse = new UserResponse("success", email);
-        //System.out.println(newUser.getFirst_name());
 
         // check if user exist if True return response
         boolean userExist = userExist(listData, email);
@@ -70,19 +68,15 @@ public class ContinentService {
 
         // checks witch country belogs to the witch continent and then ckecks if it exist in the xml file
         String countryBelong = countryBelong(continentList, newUser.getCountry());
-        System.out.println(countryBelong);
 
         boolean continentExist = continentExist(listData, countryBelong);
-        System.out.println("Continent exist " + continentExist);
 
         if(!continentExist){
             Continent newContinent = new Continent();
             newContinent.setName(countryBelong);
-            //System.out.println(newContinent.getName());
 
             Country newCountry = new Country();
             newCountry.setName(newUser.getCountry());
-            //System.out.println(newCountry.getName());
 
             ArrayList<User> userList = new ArrayList<>();
             userList.add(newUser);
@@ -99,7 +93,7 @@ public class ContinentService {
         }
 
         boolean countryExist =  countryExist(listData, newUser.getCountry());
-        System.out.println("Country exist " +countryExist);
+
         if(!countryExist){
             for(Continent continent : listData){
                 if(continent.getName().equalsIgnoreCase(countryBelong)){
@@ -110,7 +104,7 @@ public class ContinentService {
                     userList.add(newUser);
                     country.setUserList(userList);
                     continent.getCountryList().add(country);
-                    //System.out.println(continent);
+
                     //add new user to xml file
                     createXML(listData);
                     return userResponse;
@@ -249,14 +243,12 @@ public class ContinentService {
         sb.append("<data>\n");
 
         for(Continent continent : listData){
-            //System.out.println(continent.getName());
             sb.append("    <continent name=\""+continent.getName() + "\">\n");
 
             for(Country country : continent.getCountryList()){
                 sb.append("       <country name=\"" + country.getName() + "\">\n");
-                //System.out.println(country.getName());
-                for (User user : country.getUserList()){
 
+                for (User user : country.getUserList()){
                     sb.append(
                             "           <user>\n" +
                                     "               <first_name>" + user.getFirst_name() + "</first_name>\n" +
@@ -273,9 +265,7 @@ public class ContinentService {
         }
         sb.append("</data>");
 
-        //System.out.println(sb.toString());
         writeIntoXml(sb.toString());
-
     }
 
     public void writeIntoXml(String data){

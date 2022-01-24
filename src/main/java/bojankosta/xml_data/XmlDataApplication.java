@@ -8,12 +8,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 public class XmlDataApplication {
 
-
-
 	public static void main(String[] args) {
 
 		SpringApplication.run(XmlDataApplication.class, args);
-
 	}
-
 }
