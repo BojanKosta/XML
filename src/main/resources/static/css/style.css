@@ -24,9 +24,10 @@
     border: none;
     display: block;
     margin: 20px auto;
-    padding: 10px 20px;
+    padding: 10px 60px;
     border-radius: 5px 10px;
-    background-color: aquamarine;
+    background-color: rgb(7 73 255);
+    color: white;
     cursor: pointer;
 }
 
@@ -64,17 +65,44 @@ label {
     text-align: left;
 }
 
-.table {
-    background-color: antiquewhite;
+.continent {
+    margin: 5px;
+    padding: 0px;
+    border: 1px solid black;
 }
 
-.continent {
+.country {
     text-align: center;
-    background-color: darkgray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .user {
-    margin-left: 40px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+}
+
+h2, h3 {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    background-color: #459aaf;
+    margin: 0px;
+    padding: 0px;
+    flex: 0 0 100%;
+
+}
+
+.user, .continent {
+    background-color: #9cbbfd;
 }
 
 p {
@@ -82,16 +110,51 @@ p {
 }
 
 .btn-delete {
-    padding: 2px;
-    text-align: center;
-    background-color: brown;
-    color: aliceblue;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #f31212;
+    color: white;
     border: none;
-    display: inline-block;
+    margin-left: 30px;
     cursor: pointer;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .user-content, .user-function {
     display: inline-block;
 }
 
+.user p {
+    display: block;
+    margin-left: 20px;
+}
+
+.items-1 {
+    display: inline-block;
+}
+
+.items-2 {
+    display: inline-block;
+}
+
+/*
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 118px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.user-function{
+    margin: 0px;
+    padding: 0px;
+}
+
+*/

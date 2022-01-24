@@ -78,35 +78,42 @@ async function getData() {
 function createTable(data){
   const table = document.querySelector('.table');
   table.innerHTML = '';
-
+  var html = '';
   data.forEach(continent => {
-    table.innerHTML += `<div class= "continent">${continent.name}`;
+    html += `<div class= "continent"><h2>${continent.name}</h2>`;
 
     continent.countryList.forEach(country=> {
-      table.innerHTML += `<div class= "country">${country.name}`;
+      html += `<div class= "country"><h3>${country.name}</h3>`;
 
       country.userList.forEach(user => {
-        table.innerHTML += `
+        html += `
         <div class= "user">
           <div class="user-content" email = "${user.email}">
-            <p>${user.first_name}</p>
-            <p>${user.last_name}</p>
-            <p>${user.city}</p>
-            <p>${user.address}</p>
-            <p>${user.email}</p>
-            <p>${user.password}</p>
+              <div class="items-1">
+                <p>First Name: ${user.first_name}</p>
+                <p>Last Name: ${user.last_name}</p>
+                <p>CIty: ${user.city}</p>
+              </div>  
+              <div class="items-2">
+                <p>Address: ${user.address}</p>
+                <p>Email: ${user.email}</p>
+                <p>Password: ${user.password}</p>
+              </div>  
           </div>
           <div class="user-function">
+            <div class="center">
             <button class="btn-delete" onclick="deleteUser('${user.email}')">Delete</delete>
+            </div>
           </div>
         </div>`;
       });
       //close country
-      table.innerHTML += `</div>`;
+      html += `</div>`;
     }); 
   // close continent  
-  table.innerHTML += `</div>`;
+  html += `</div>`;
  }); 
+ table.innerHTML = html;
 }
 
 
